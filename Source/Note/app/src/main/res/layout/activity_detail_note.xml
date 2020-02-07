@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/time_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#6D6D6A"
+                android:textSize="15sp"
+                >
+            </TextView>
+
+            <EditText
+                android:id="@+id/data_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:gravity="top"
+                android:minLines="16"
+                android:background="#D5D5D0"
+                >
+            </EditText>
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="5"
+                android:background="#D5D5D0"
+                android:layout_marginEnd="2dp"
+                >
+            </GridView>
+
+            <EditText
+                android:id="@+id/tag_note"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minLines="1"
+                android:textSize="20sp"
+                android:hint="@string/tag"
+                android:gravity="top"
+                >
+            </EditText>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
